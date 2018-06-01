@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GradientCoin</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href='index.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- Card Form-->
+      <div class="card">
+        <div class="card-body">
+          <form class="form" id="colorForm">
+            <p class="h4 text-center py-4">Mint a new Gradient Coin!</p>
+            <label for="outerColor" class="grey-text font-weight-light">Outer color</label>
+            <input type="text" id="outerColor" class="form-control" placeholder="Enter the 6 character hex of desired color">
+            <label for="innerColor" class="grey-text font-weight-light">Inner color</label>
+            <input type="text" id="innerColor" class="form-control" placeholder="Enter the 6 character hex of desired color">
+
+            <div class="text-center py-4 mt-3">
+              <button class="btn btn-block btn-success" id="mintColors" type="button" onclick="App.mintHandler()">Mint New Gradient Coin!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <br>
+        <h3> Your Owned GradientCoins</h3>
+        <img id="loading" src="img/loading.gif" height="40px" width="auto" style="visibility: hidden" />
+        <div id="owner-colors">
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="app.js"></script>
+
+</html>
